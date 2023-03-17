@@ -1,0 +1,98 @@
+.nav-bar {
+  background: #181818;
+  width: 60px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  z-index: 3;
+  min-height: 500px;
+
+  .logo {
+    display: block;
+    padding: 8px 0;
+
+    img {
+      display: block;
+      margin: 8px auto;
+      width: 24px;
+      height: auto;
+
+      &.sub-logo {
+        width: 50px;
+      }
+    }
+  }
+  nav {
+    display: block;
+    text-align: center;
+    position: absolute;
+    height: 210px;
+    top: 50%;
+    margin-top: -120px;
+    width: 100%;
+
+    a {
+      font-size: 22xp;
+      color: #4d4d4e;
+      display: block;
+      line-height: 51px;
+      height: 51px;
+      position: relative;
+      text-decoration: none;
+
+      i {
+        transition: all 0.3s ease-out;
+      }
+
+      &:hover {
+        color: #ffd700;
+
+        svg {
+          opacity: 0;
+        }
+
+        &:after {
+          opacity: 1;
+        }
+      }
+
+      &:after {
+        content: '';
+        font-size: 9px;
+        letter-spacing: 2px;
+        position: absolute;
+        bottom: 0;
+        display: block;
+        width: 100%;
+        text-align: center;
+        opacity: 0;
+        transition: all 0.3s ease-out;
+      }
+
+      //CLICK OVER THE HOME ICON
+      &:first-child {
+        &::after {
+          content: 'HOME';
+        }
+      }
+    }
+    //HOVER OVER THE 2ND ICON UNDER HOME
+    a.about-link {
+      &:after {
+        content: 'ABOUT';
+      }
+    }
+    //hover over the envelope icon
+    a.contact-link {
+      &:after {
+        content: 'CONTACT';
+      }
+    }
+    //the active page will display yellow icon
+    a.active {
+      svg {
+        color: #ffd700;
+      }
+    }
+  }
+}
