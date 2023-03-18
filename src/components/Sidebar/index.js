@@ -49,16 +49,6 @@ const Sidebar = () => (
           <FontAwesomeIcon icon={faGithub} color="#4d4d4e" />
         </a>
       </li>
-
-      <li>
-        <a
-          href="https://www.linkedin.com/in/luciana-bautista-ferrand-615bb0216/"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <FontAwesomeIcon icon={faLinkedin} color="#4d4d4e" />
-        </a>
-      </li>
     </ul>
   </div>
 )

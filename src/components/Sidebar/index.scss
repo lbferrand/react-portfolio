@@ -1,5 +1,5 @@
 .nav-bar {
-  background: #181818;
+  background: #3c296a;
   width: 60px;
   height: 100%;
   position: absolute;
@@ -33,7 +33,7 @@
 
     a {
       font-size: 22xp;
-      color: #4d4d4e;
+      color: #d0ff00;
       display: block;
       line-height: 51px;
       height: 51px;
@@ -45,7 +45,7 @@
       }
 
       &:hover {
-        color: #ffd700;
+        color: #d0ff00;
 
         svg {
           opacity: 0;
@@ -91,7 +91,31 @@
     //the active page will display yellow icon
     a.active {
       svg {
-        color: #ffd700;
+        color: #d0ff00;
+      }
+    }
+  }
+
+  ul {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    display: block;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+    margin: 0;
+
+    li {
+      a {
+        padding: 7px 0;
+        display: block;
+        font-size: 15px;
+        line-height: 16px;
+
+        &:hover svg {
+          color: #d0ff00;
+        }
       }
     }
   }
