@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import LogoTitle from '../../assets/images/logo-s.png'
+import LogoTitle from '../../assets/images/logo-f.png'
+import './index.scss'
 
 const Home = () => {
   return (
@@ -8,7 +9,7 @@ const Home = () => {
       <div className="text-zone">
         <h1>
           Hi, <br /> I'm <img src={LogoTitle} alt="developer" />
-          ferrand
+          errand
           <br />
           web developer
         </h1>
